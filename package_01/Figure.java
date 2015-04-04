@@ -26,10 +26,8 @@ public class Figure {
 	}
 
 	public void setWidth(double width) {
-		if (width <= 0)
-			throw new IllegalArgumentException();
-
-		this.width = width;
+		if (width > 0)
+			this.width = width;
 	}
 
 	public void setLength(double length) {
